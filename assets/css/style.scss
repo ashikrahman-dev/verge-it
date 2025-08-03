@@ -357,3 +357,47 @@ h3 {
         }
     }
 }
+
+
+// Clients slider area
+.clients-slider-area {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 10%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        z-index: 2;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(
+            270deg,
+            rgba(255, 255, 255, 1) 10%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        z-index: 2;
+    }
+}
+
+
+// Footer area
+.footer-area {
+    font-size: 16px;
+    color: var(--dark-2);
+    padding-block: 20px;
+    border-top: 1px solid rgba(47, 66, 231, 0.13);;
+}

@@ -40,3 +40,47 @@ document.addEventListener("DOMContentLoaded", function () {
         splide.mount(window.splide.Extensions);
     });
 });
+
+
+// Client logo slider
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll("#client-slider");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 7,
+            perMove: 1,
+            arrows: false,
+            pagination: false,
+            gap: "24px",
+            drag: "free",
+            focus: "center",
+            speed: 3500,
+            autoScroll: {
+                speed: 1,
+                pauseOnHover: false,
+            },
+            // breakpoints: {
+            //     1199: {
+            //         gap: "45px",
+            //         padding: "5rem",
+            //     },
+            //     991: {
+            //         gap: "30px",
+            //         padding: "0rem",
+            //     },
+            //     767: {
+            //         gap: "20px",
+            //         padding: "0rem",
+            //     },
+            //     575: {
+            //         gap: "10px",
+            //         padding: "0rem",
+            //     },
+            // },
+        });
+
+        splide.mount(window.splide.Extensions);
+    });
+});
