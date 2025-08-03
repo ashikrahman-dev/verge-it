@@ -234,4 +234,84 @@ h3 {
   z-index: -1;
   opacity: 0;
   transition: 380ms linear;
+}
+
+.achievement {
+  background: rgba(0, 163, 255, 0.1);
+}
+.achievement #achievement-slider .splide__track .splide__list .splide__slide {
+  height: 100%;
+}
+.achievement #achievement-slider .achievement-slide-item {
+  border-radius: 12px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  height: 100%;
+}
+.achievement #achievement-slider .achievement-slide-item .achievement-image img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+.achievement #achievement-slider .achievement-slide-item .achievement-slide-content {
+  padding: 16px 16px 24px 16px;
+}
+.achievement #achievement-slider .achievement-slide-item .achievement-slide-content .achievement-slide_heading {
+  color: var(--navy-blue);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.achievement #achievement-slider .achievement-slide-item .achievement-slide-content .achievement-slide_description {
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.contact-area .contact-info-area {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contact-area .contact-info-area .single-contact-info .contact-info-icon {
+  max-width: 80px;
+}
+.contact-area .contact-info-area .single-contact-info a {
+  font-size: 24px;
+  color: var(--navy-blue);
+  line-height: 1.3;
+  text-decoration: none;
+}
+.contact-area .contact-info-area .single-contact-info span {
+  font-size: 24px;
+  color: var(--navy-blue);
+  line-height: 1.3;
+  text-decoration: none;
+}
+.contact-area .contact-info-area .single-contact-info .contact-info-label {
+  font-size: 20px;
+  color: var(--dark-2);
+}
+.contact-area .contact-form-wrap .row {
+  --bs-gutter-y: 16px;
+}
+.contact-area .contact-form-wrap textarea {
+  min-height: 160px !important;
+  resize: none;
+}
+.contact-area .contact-form-wrap .form-control {
+  border-radius: 8px;
+  border: 1px solid var(--dark-2);
+  padding: 10px 16px;
+  font-size: 20px;
+  color: var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+.contact-area .contact-form-wrap .form-control::-moz-placeholder {
+  color: var(--dark-2);
+}
+.contact-area .contact-form-wrap .form-control::placeholder {
+  color: var(--dark-2);
+}
+.contact-area .contact-form-wrap .form-control:focus {
+  outline: none;
+  border: 1px solid var(--sky-blue);
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */
