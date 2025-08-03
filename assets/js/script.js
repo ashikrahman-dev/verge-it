@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 // Client logo slider
 document.addEventListener("DOMContentLoaded", function () {
     let splideElements = document.querySelectorAll("#client-slider");
@@ -82,5 +81,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         splide.mount(window.splide.Extensions);
+    });
+});
+
+// Magnific Popup
+$(document).ready(function () {
+    $(".image-popup").magnificPopup({
+        type: "image",
+        gallery: {
+            enabled: true,
+        },
+        closeOnContentClick: true,
+        mainClass: "mfp-img-mobile",
+        image: {
+            verticalFit: true,
+            titleSrc: "title",
+        },
     });
 });
