@@ -302,13 +302,6 @@ h3 {
     }
 }
 
-// Photo gallery
-.photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
-}
-
 // Contact
 .contact-area {
     .contact-info-area {
