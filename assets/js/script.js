@@ -1,3 +1,41 @@
+//Banner Slider
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll("#banner-slider");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 1,
+            perMove: 1,
+            arrows: true,
+            pagination: false,
+            autoplay: true,
+            speed: 1800,
+            // breakpoints: {
+            //     1199: {
+            //         gap: "45px",
+            //         padding: "5rem",
+            //     },
+            //     991: {
+            //         gap: "30px",
+            //         padding: "0rem",
+            //     },
+            //     767: {
+            //         gap: "20px",
+            //         padding: "0rem",
+            //     },
+            //     575: {
+            //         gap: "10px",
+            //         padding: "0rem",
+            //     },
+            // },
+        });
+
+        splide.mount();
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     let splideElements = document.querySelectorAll("#achievement-slider");
 
