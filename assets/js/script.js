@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             breakpoints: {
                 1199: {
-                    perPage: 3,
-                    padding: "10rem",
+                    perPage: 2,
+                    padding: "7rem",
                 },
                 767: {
                     perPage: 2,
@@ -116,6 +116,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 speed: 1,
                 pauseOnHover: false,
             },
+            breakpoints: {
+                1199: {
+                    perPage: 6,
+                },
+                767: {
+                    perPage: 5,
+                },
+                575: {
+                    perPage: 3,
+                },
+                280: {
+                    perPage: 2,
+                }
+            }
             // breakpoints: {
             //     1199: {
             //         gap: "45px",

@@ -68,6 +68,16 @@ a {
 h1 {
     font-size: 62px;
     line-height: 1.2;
+        
+    @media (max-width: 1199px) {
+        font-size: 52px;
+    }
+    @media (max-width: 991px) {
+        font-size: 42px;
+    }
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
 }
 
 h2 {
@@ -135,10 +145,24 @@ p {
 
 // Header styles
 .site-header {
+    .navbar-brand {
+        img {
+            @media (max-width: 991px) {
+                max-width: 200px;
+            }
+            @media (max-width: 767px) {
+                max-width: 160px;
+            }
+        }
+    }
     .navbar {
         .navbar-nav {
             display: flex;
             gap: 24px;
+            @media (max-width: 767px) {
+                gap: 12px;
+                padding-top: 24px;
+            }
             .nav-item {
                 .nav-link {
                     font-size: 22px;
@@ -146,6 +170,10 @@ p {
                     padding: 0;
                     color: var(--dark);
                     transition: color 0.2s ease-in-out;
+                    
+                    @media (max-width: 767px) {
+                         font-size: 18px;
+                    }
                 }
 
                 &:hover {
@@ -169,6 +197,14 @@ p {
     align-items: center;
     padding-block: 160px;
 
+    @media (max-width: 991px) {
+        min-height: auto;
+        padding-block: 100px;
+    }
+    @media (max-width: 767px) {
+        padding-block: 80px 60px;
+    }
+
     .slider-content-area {
         color: var(--navy-blue);
 
@@ -184,6 +220,16 @@ p {
         p {
             font-size: 24px;
             line-height: 1.3;
+            max-width: 340px;
+            @media (max-width: 1199px) {
+                font-size: 22px;
+            }
+            @media (max-width: 991px) {
+                font-size: 20px;
+            }
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -194,9 +240,10 @@ p {
             width: 60px;
             height: 60px;
             background: hsla(214, 81%, 35%, 0.13);
-            opacity: 1;
+            opacity: 0.5;
             backdrop-filter: blur(2px);
             transition: background 0.2s linear;
+            
 
             svg * {
                 fill: hsla(214, 81%, 35%, 0.61);
@@ -212,6 +259,8 @@ p {
                 svg * {
                     fill: hsla(0, 0%, 100%);
                 }
+                
+            opacity: 1;
             }
 
             @media (max-width: 991px) {
@@ -366,6 +415,15 @@ p {
         .service-description {
             font-size: 22px;
             line-height: 1.3;
+            @media (max-width: 991px) {
+                font-size: 20px;
+            }
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+            @media (max-width: 575px) {
+                font-size: 16px;
+            }
         }
 
         &::before {
@@ -415,6 +473,9 @@ p {
 
             .our_achievement_description {
                 font-size: 18px;
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
             }
         }
     }
@@ -455,6 +516,16 @@ p {
                 .achievement-slide_description {
                     font-size: 22px;
                     line-height: 1.3;
+
+                    @media (max-width: 991px) {
+                        font-size: 20px;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: 18px;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -463,10 +534,16 @@ p {
 
 // Contact
 .contact-area {
+    .row {
+        --bs-gutter-y: 48px;
+    }
     .contact-info-area {
         display: flex;
         flex-direction: column;
         gap: 32px;
+        @media (max-width: 991px) {
+            gap: 24px;
+        }
         .single-contact-info {
             .contact-info-icon {
                 max-width: 80px;
@@ -476,16 +553,25 @@ p {
                 color: var(--navy-blue);
                 line-height: 1.3;
                 text-decoration: none;
+                @media (max-width: 991px) {
+                    font-size: 20px;
+                }
             }
             span {
                 font-size: 24px;
                 color: var(--navy-blue);
                 line-height: 1.3;
                 text-decoration: none;
+                @media (max-width: 991px) {
+                    font-size: 20px;
+                }
             }
             .contact-info-label {
                 font-size: 20px;
                 color: var(--dark-2);
+                @media (max-width: 991px) {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -534,6 +620,13 @@ p {
             rgba(255, 255, 255, 0) 100%
         );
         z-index: 2;
+
+        @media (max-width: 991px) {
+            width: 160px;
+        }
+        @media (max-width: 767px) {
+            width: 60px;
+        }
     }
     &::after {
         position: absolute;
@@ -548,6 +641,12 @@ p {
             rgba(255, 255, 255, 0) 100%
         );
         z-index: 2;
+        @media (max-width: 991px) {
+            width: 160px;
+        }
+        @media (max-width: 767px) {
+            width: 60px;
+        }
     }
 }
 
@@ -559,9 +658,18 @@ p {
     background-position: center center;
 
     .call-to-action-content {
+        @media (max-width: 991px) {
+            padding-bottom: 80px;
+            text-align: center;
+        }
         .cta-heading {
             max-width: 440px;
             color: var(--sky-blue);
+            @media (max-width: 991px) {
+                
+            max-width: 100%;
+                text-align: center;
+            }
         }
         p {
             font-size: 20px;
@@ -576,4 +684,10 @@ p {
     color: var(--dark-2);
     padding-block: 20px;
     border-top: 1px solid rgba(47, 66, 231, 0.13);
+}
+
+.contact-info-icon img {
+    @media (max-width: 991px) {
+        max-width: 40px;
+    }
 }

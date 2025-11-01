@@ -68,6 +68,21 @@ h1 {
   font-size: 62px;
   line-height: 1.2;
 }
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   font-size: 48px;
@@ -151,9 +166,25 @@ p {
   }
 }
 
+@media (max-width: 991px) {
+  .site-header .navbar-brand img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .site-header .navbar-brand img {
+    max-width: 160px;
+  }
+}
 .site-header .navbar .navbar-nav {
   display: flex;
   gap: 24px;
+}
+@media (max-width: 767px) {
+  .site-header .navbar .navbar-nav {
+    gap: 12px;
+    padding-top: 24px;
+  }
 }
 .site-header .navbar .navbar-nav .nav-item .nav-link {
   font-size: 22px;
@@ -161,6 +192,11 @@ p {
   padding: 0;
   color: var(--dark);
   transition: color 0.2s ease-in-out;
+}
+@media (max-width: 767px) {
+  .site-header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+  }
 }
 .site-header .navbar .navbar-nav .nav-item:hover .nav-link {
   color: var(--sky-blue);
@@ -176,6 +212,17 @@ p {
   align-items: center;
   padding-block: 160px;
 }
+@media (max-width: 991px) {
+  .home-banner {
+    min-height: auto;
+    padding-block: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .home-banner {
+    padding-block: 80px 60px;
+  }
+}
 .home-banner .slider-content-area {
   color: var(--navy-blue);
 }
@@ -189,13 +236,29 @@ p {
 .home-banner .slider-content-area p {
   font-size: 24px;
   line-height: 1.3;
+  max-width: 340px;
+}
+@media (max-width: 1199px) {
+  .home-banner .slider-content-area p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .home-banner .slider-content-area p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .home-banner .slider-content-area p {
+    font-size: 18px;
+  }
 }
 
 #banner-slider .splide__arrows .splide__arrow {
   width: 60px;
   height: 60px;
   background: hsla(214, 81%, 35%, 0.13);
-  opacity: 1;
+  opacity: 0.5;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   transition: background 0.2s linear;
@@ -212,6 +275,7 @@ p {
 }
 #banner-slider .splide__arrows .splide__arrow:hover {
   background: hsla(214, 81%, 35%, 0.61);
+  opacity: 1;
 }
 #banner-slider .splide__arrows .splide__arrow:hover svg * {
   fill: hsl(0, 0%, 100%);
@@ -350,6 +414,21 @@ p {
   font-size: 22px;
   line-height: 1.3;
 }
+@media (max-width: 991px) {
+  .services-area .services-card .service-description {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .services-area .services-card .service-description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .services-area .services-card .service-description {
+    font-size: 16px;
+  }
+}
 .services-area .services-card::before {
   position: absolute;
   content: "";
@@ -394,6 +473,11 @@ p {
 .our-achievement-area .our-achievement-item .our-achievement-content .our_achievement_description {
   font-size: 18px;
 }
+@media (max-width: 767px) {
+  .our-achievement-area .our-achievement-item .our-achievement-content .our_achievement_description {
+    font-size: 16px;
+  }
+}
 
 .achievement {
   background: rgba(0, 163, 255, 0.1);
@@ -423,11 +507,34 @@ p {
   font-size: 22px;
   line-height: 1.3;
 }
+@media (max-width: 991px) {
+  .achievement #achievement-slider .achievement-slide-item .achievement-slide-content .achievement-slide_description {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .achievement #achievement-slider .achievement-slide-item .achievement-slide-content .achievement-slide_description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .achievement #achievement-slider .achievement-slide-item .achievement-slide-content .achievement-slide_description {
+    font-size: 16px;
+  }
+}
 
+.contact-area .row {
+  --bs-gutter-y: 48px;
+}
 .contact-area .contact-info-area {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+@media (max-width: 991px) {
+  .contact-area .contact-info-area {
+    gap: 24px;
+  }
 }
 .contact-area .contact-info-area .single-contact-info .contact-info-icon {
   max-width: 80px;
@@ -438,15 +545,30 @@ p {
   line-height: 1.3;
   text-decoration: none;
 }
+@media (max-width: 991px) {
+  .contact-area .contact-info-area .single-contact-info a {
+    font-size: 20px;
+  }
+}
 .contact-area .contact-info-area .single-contact-info span {
   font-size: 24px;
   color: var(--navy-blue);
   line-height: 1.3;
   text-decoration: none;
 }
+@media (max-width: 991px) {
+  .contact-area .contact-info-area .single-contact-info span {
+    font-size: 20px;
+  }
+}
 .contact-area .contact-info-area .single-contact-info .contact-info-label {
   font-size: 20px;
   color: var(--dark-2);
+}
+@media (max-width: 991px) {
+  .contact-area .contact-info-area .single-contact-info .contact-info-label {
+    font-size: 18px;
+  }
 }
 .contact-area .contact-form-wrap .row {
   --bs-gutter-y: 16px;
@@ -488,6 +610,16 @@ p {
   background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 100%);
   z-index: 2;
 }
+@media (max-width: 991px) {
+  .clients-slider-area::before {
+    width: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .clients-slider-area::before {
+    width: 60px;
+  }
+}
 .clients-slider-area::after {
   position: absolute;
   content: "";
@@ -498,6 +630,16 @@ p {
   background: linear-gradient(270deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 100%);
   z-index: 2;
 }
+@media (max-width: 991px) {
+  .clients-slider-area::after {
+    width: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .clients-slider-area::after {
+    width: 60px;
+  }
+}
 
 .call-to-action {
   background: url("../images/cta-bg.svg");
@@ -505,9 +647,21 @@ p {
   background-size: cover;
   background-position: center center;
 }
+@media (max-width: 991px) {
+  .call-to-action .call-to-action-content {
+    padding-bottom: 80px;
+    text-align: center;
+  }
+}
 .call-to-action .call-to-action-content .cta-heading {
   max-width: 440px;
   color: var(--sky-blue);
+}
+@media (max-width: 991px) {
+  .call-to-action .call-to-action-content .cta-heading {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 .call-to-action .call-to-action-content p {
   font-size: 20px;
@@ -519,4 +673,10 @@ p {
   color: var(--dark-2);
   padding-block: 20px;
   border-top: 1px solid rgba(47, 66, 231, 0.13);
+}
+
+@media (max-width: 991px) {
+  .contact-info-icon img {
+    max-width: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
