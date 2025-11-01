@@ -73,11 +73,45 @@ h1 {
 h2 {
     font-size: 48px;
     line-height: 1.2;
+
+    @media (max-width: 1199px) {
+        font-size: 36px;
+    }
+    @media (max-width: 991px) {
+        font-size: 32px;
+    }
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
 }
 
 h3 {
     font-size: 36px;
     line-height: 1.2;
+
+    
+    @media (max-width: 1199px) {
+        font-size: 32px;
+    }
+    @media (max-width: 991px) {
+        font-size: 28px;
+    }
+    @media (max-width: 767px) {
+        font-size: 26px;
+    }
+}
+
+p {
+    font-size: 16px;
+    @media (max-width: 1199px) {
+        font-size: 36px;
+    }
+    @media (max-width: 991px) {
+        font-size: 32px;
+    }
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
 }
 
 .mb-40 {
@@ -242,6 +276,21 @@ h3 {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
 
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 575px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
         .our-services-item {
             padding: 32px 24px 48px;
             border-radius: 24px;
@@ -287,6 +336,13 @@ h3 {
         position: relative;
         overflow: hidden;
         z-index: 1;
+        
+        @media (max-width: 991px) {
+            width: calc(49.95% - 24px);
+        }
+        @media (max-width: 575px) {
+            width: calc(100%);
+        }
 
         &:hover {
             box-shadow: 0 40px 60px 0 rgba(0, 0, 52, 0.12);
@@ -341,6 +397,7 @@ h3 {
         padding: 4px;
         .our-achievement-image img {
             border-radius: 20px 20px 0 0;
+            width: 100%;
         }
         border-radius: 24px;
         border: 1px solid #eeeff1;

@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             pagination: false,
             autoplay: true,
             speed: 1800,
+
             // breakpoints: {
             //     1199: {
             //         gap: "45px",
@@ -55,6 +56,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 speed: 1,
                 pauseOnHover: true,
             },
+            breakpoints: {
+                1199: {
+                    perPage: 3,
+                    padding: "10rem",
+                },
+                767: {
+                    perPage: 2,
+                    padding: "4rem",
+                },
+                575: {
+                    perPage: 1,
+                },
+                280: {
+                    perPage: 1,
+                    padding: "2rem",
+                }
+            }
             // breakpoints: {
             //     1199: {
             //         gap: "45px",
